@@ -5,7 +5,7 @@ import ua.edu.ua.demo.items.Item;
 
 
 @Getter
-public class FlowerPack extends Item{
+public class FlowerPack extends Item {
     private final Flower flower;
     private final int amount;
     private final double price;

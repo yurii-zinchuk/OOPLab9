@@ -8,7 +8,9 @@ import java.util.List;
 public class FlowerBucket extends Item {
     private final List<FlowerPack> flowerPacks;
 
-    public FlowerBucket() {flowerPacks = new LinkedList<>();}
+    public FlowerBucket() {
+        flowerPacks = new LinkedList<>();
+    }
 
     @Override
     public double price() {
@@ -21,7 +23,9 @@ public class FlowerBucket extends Item {
 
     public Item searchFlower(double price) {
         for (Item flower : flowerPacks) {
-            if (price == flower.price()) {return flower;}
+            if (price == flower.price()) {
+                return flower;
+            }
         }
         return null;
     }
@@ -29,6 +33,9 @@ public class FlowerBucket extends Item {
     public void addFlowers(List<FlowerPack> flowers) {
         flowerPacks.addAll(flowers);
     }
-    public void addFlowers(Flower flower) {flowerPacks.add(new FlowerPack(flower, 1));}
+
+    public void addFlowers(Flower flower) {
+        flowerPacks.add(new FlowerPack(flower, 1));
+    }
 
 }

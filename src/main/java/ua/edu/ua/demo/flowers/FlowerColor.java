@@ -1,7 +1,7 @@
 package ua.edu.ua.demo.flowers;
 
 public enum FlowerColor {
-    RED ,
+    RED,
     BLUE,
     GREEN,
     WHITE;

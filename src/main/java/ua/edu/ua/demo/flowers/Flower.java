@@ -15,7 +15,9 @@ public abstract class Flower extends Item {
         this.price = price;
     }
 
-    private void setColor(FlowerColor color) {this.color = color.toString();}
+    private void setColor(FlowerColor color) {
+        this.color = color.toString();
+    }
 
     @Override
     public double price() {

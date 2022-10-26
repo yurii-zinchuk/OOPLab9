@@ -8,7 +8,7 @@ import ua.edu.ua.demo.flowers.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(path= "/api/v1/flower-bucket")
+@RequestMapping(path = "/api/v1/flower-bucket")
 public class FlowerBucketController {
     @GetMapping
     public List<FlowerBucket> flowersInBucket() {

@@ -39,6 +39,6 @@ public class DeliveryTests {
     @Test
     public void testPostDelivery() {
         List<Item> delivered = postDelivery.deliver(deliveryItems);
-        assert(delivered instanceof LinkedList<Item>);
+        assert (delivered instanceof LinkedList<Item>);
     }
 }

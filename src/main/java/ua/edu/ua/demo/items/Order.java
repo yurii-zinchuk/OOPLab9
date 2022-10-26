@@ -38,14 +38,17 @@ public class Order {
         if (paid) {
             System.out.println("Payment successful.");
             delivery.deliver(items);
-        }
-        else {
+        } else {
             System.out.println("Payment failed.");
         }
     }
 
-    public void addItem(Item i) {items.add(i);}
+    public void addItem(Item i) {
+        items.add(i);
+    }
 
-    public void removeItem(Item i) {items.remove(i);}
+    public void removeItem(Item i) {
+        items.remove(i);
+    }
 }
 

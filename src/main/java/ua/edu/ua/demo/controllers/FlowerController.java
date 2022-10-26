@@ -10,7 +10,7 @@ import ua.edu.ua.demo.flowers.FlowerColor;
 import java.util.List;
 
 @RestController
-@RequestMapping(path= "/api/v1/flower")
+@RequestMapping(path = "/api/v1/flower")
 public class FlowerController {
     @GetMapping
     public List<Flower> flowers() {
