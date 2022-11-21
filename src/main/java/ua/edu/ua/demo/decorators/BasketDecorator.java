@@ -1,21 +1,10 @@
 package ua.edu.ua.demo.decorators;
 
+import lombok.NoArgsConstructor;
 import ua.edu.ua.demo.items.Item;
 
-public class BasketDecorator extends ItemDecorator {
-
+public class BasketDecorator extends AbstractDecorator {
     public BasketDecorator(Item item) {
-        super(item);
-        description = "decorated with basket.";
-    }
-
-    @Override
-    public double price() {
-        return 4 + item.price();
-    }
-
-    @Override
-    public double getPrice() {
-        return price();
+        super(item, 4,"decorated with basket ");
     }
 }

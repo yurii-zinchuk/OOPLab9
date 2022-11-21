@@ -13,8 +13,8 @@ public class FlowerBucketController {
     @GetMapping
     public List<FlowerBucket> flowersInBucket() {
         FlowerBucket bucket = new FlowerBucket();
-        bucket.addFlowers(new CactusFlower(FlowerColor.GREEN, 50, 29));
-        bucket.addFlowers(new RomashkaFlower(FlowerColor.WHITE, 40, 17));
+        bucket.addFlowers(new CactusFlower(50, "green", 29));
+        bucket.addFlowers(new RomashkaFlower(40, "white", 17));
         return List.of(bucket);
     }
 }

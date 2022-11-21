@@ -21,12 +21,12 @@ public class DeliveryTests {
         postDelivery = new PostDeliveryStrategy();
 
         deliveryItems = new LinkedList<>();
-        deliveryItems.add(new RomashkaFlower(FlowerColor.WHITE, 17, 20));
-        deliveryItems.add(new CactusFlower(FlowerColor.RED, 25, 37));
-        deliveryItems.add(new FlowerPack(new RomashkaFlower(FlowerColor.BLUE, 19, 30),
+        deliveryItems.add(new RomashkaFlower(17, "white", 20));
+        deliveryItems.add(new CactusFlower(25, "red", 37));
+        deliveryItems.add(new FlowerPack(new RomashkaFlower(19, "blue", 30),
                 3));
         FlowerBucket bucket = new FlowerBucket();
-        bucket.addFlowers(new CactusFlower(FlowerColor.GREEN, 50, 100));
+        bucket.addFlowers(new CactusFlower(50, "green", 100));
         deliveryItems.add(bucket);
     }
 

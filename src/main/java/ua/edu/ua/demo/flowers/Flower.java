@@ -1,26 +1,33 @@
 package ua.edu.ua.demo.flowers;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import ua.edu.ua.demo.items.Item;
 
+import javax.persistence.*;
+
 @Getter
-public abstract class Flower extends Item {
-    protected String color;
-    protected double sepalLength;
-    protected double price;
+@Entity
+@Table
+@NoArgsConstructor
+@AllArgsConstructor
+public class Flower extends Item {
+    @Id @GeneratedValue
+    private Long id;
+    private double sepalLength;
+    public String color;
+    private double price;
 
-    public Flower(FlowerColor color, double sepalLength, double price) {
-        setColor(color);
+    public Flower(double sepalLength, String color, double price) {
         this.sepalLength = sepalLength;
+        this.color = color;
         this.price = price;
-    }
-
-    private void setColor(FlowerColor color) {
-        this.color = color.toString();
     }
 
     @Override
     public double price() {
         return price;
     }
+
 }
