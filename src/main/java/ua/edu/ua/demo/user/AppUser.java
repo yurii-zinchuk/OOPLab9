@@ -17,6 +17,7 @@ import java.time.Period;
 public class AppUser {
     @Id @GeneratedValue
     private Long id;
+    @Column(unique = true)
     private String email;
     private LocalDate dob;
     @Transient
