@@ -1,11 +1,16 @@
-GET https://fierce-headland-66218.herokuapp.com/api/v1/flower
+GET localhost:8080/api/v1/user
 
 ###
-POST https://fierce-headland-66218.herokuapp.com/api/v1/flower
+POST localhost:8080/api/v1/user
 Content-Type: application/json
 
+//{
+//  "sepalLength": 889.0,
+//  "color": "red",
+//  "price": 454.0
+//}
+
 {
-  "sepalLength": 889.0,
-  "color": "red",
-  "price": 454.0
+  "dob": "2000-07-23",
+  "email": "1@a.com"
 }
