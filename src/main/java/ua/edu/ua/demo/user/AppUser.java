@@ -28,9 +28,11 @@ public class AppUser {
         this.dob = dob;
     }
 
-
     public int getAge() {
         return Period.between(dob, LocalDate.now()).getYears();
+    }
+    public void getNotified() {
+        System.out.println("Yesss supercool, my order is arrived");
     }
 
 }
